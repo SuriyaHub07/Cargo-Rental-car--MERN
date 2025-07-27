@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import MyBookings from './pages/MyBookings';
 import CarDetails from './pages/CarDetails';
 import Cars from './pages/Cars';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/cars' element={<Cars/>}/>
         <Route path='/my-bookings' element={<MyBookings/>}/>
       </Routes>
+      
+      {isOwnerPath&&  <Footer />}
     </>
   )
 }
